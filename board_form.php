@@ -3,13 +3,14 @@
 	session_save_path("./session");
 	session_start();
 	if (!$_SESSION['is_login']) {
-		header("Location: /phplec/loginform.php");
+		header("Location: /phplec/board_db/loginform.php");
 		exit;
 	} 
 ?>
-
+<!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"/>
 </head>
 <body>
 	<!-- 로그아웃 버튼 -->
